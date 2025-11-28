@@ -1,0 +1,7 @@
+-- simple demo table
+CREATE TABLE IF NOT EXISTS items (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    qty INTEGER NOT NULL DEFAULT 0,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
